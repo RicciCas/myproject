@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="'stylesheet" href="style.css" />
+        <script scr="store.js" async></script>
+    <style>
+        body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 40%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+        ul {
+            list-style: none;
+        }
+
+        ul li::before{
+            color:red;
+            display: inline-block;
+            width: 1em;
+        }
+        
+        body {
+    margin: 0;
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: #eee;
+}
+
+header * {
+    display: inline;
+    height: 50px;
+}
+
+header ul {
+    padding: 0;
+}
+
+header li {
+    margin-left: 20px;
+}
+
+section {
+    height: 110vh;
+    border: 1px solid rgba(3, 0, 3, 0.87);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    background-size: cover; /* Add this line */
+    background-position: center center; /* Add this line */
+    background-repeat: no-repeat; /* Add this line */
+    background-attachment: fixed; /* Add this line */
+}
+
+#hero .profile-img {
+    width: 300px;
+    border-radius: 50%;
+}
+#store .store-img {
+    width: 300px;
+    border-radius: 50%; 
+}
+#store .sung-img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+}
+
+#hero h1 {
+    font-size: 3em;
+    color:rgb(135, 70, 138);
+    font-family: aharoni;
+}
+section h2 {
+    font-size: 3em;
+    color:rgb(10, 10, 1);
+    text-align: center;
+}
+
+section h3 {
+    font-size: 3em;
+    color:rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+section h4 {
+    font-size: 3em;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+section h5 {
+    font-size: 3em;
+    color:black;
+    font-family: cogenial black;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(189, 139, 212);
+}
+
+/* Add everything below here */
+
+#hero {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://www.thespruce.com/thmb/TsI3yNclW-R2QcFTFai5m99iQaY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/tulip-types-for-spring-garden-1315804-hero-5c10c927e00c459eb24c702be447e50d.jpg');
+}
+
+#about {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://img.rawpixel.com/private/static/images/website/2022-05/pf-s113-04.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=a747ec45851487a53183466688e15451');
+}
+
+#mywork {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://t4.ftcdn.net/jpg/02/18/89/83/360_F_218898398_wnLuoR9GY4qhLB2tc7o3tSJbQCRfq0xc.jpg');
+}
+
+#store {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://static.vecteezy.com/system/resources/previews/003/346/398/original/shopping-store-or-market-icon-free-vector.jpg');
+}
+
+#contact {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://iamjmuldera.files.wordpress.com/2019/10/contact-us-1908762_960_720.png');
+}
+
+</style>
+        <title>Welcome to My Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <header>
+            <img src="https://pbs.twimg.com/profile_images/1088177696654249984/BjpvwVyD_400x400.jpg" class="profile-img"><nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#mywork">My Work</a></li>
+                    <li><a href="#store">Store</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="hero">
+                <div class="section-inner">
+                    <img src="image1.jpg" class="profile-img">
+                    <h1>Hello, I'm Ricci Castillo.</h1>
+                    <p> This is a little about me, and my experiences. I started this journey in 2019 at Kean university.
+                        I enjoy being able to have more knowledge into the technology world. 
+                    </p>
+                </div>
+            </section>
+            <section id="about">
+                <div class="section-inner">
+                    <h2>About me</h2>
+                    <p><center>Hi Again, every day I am thankful to be able to be part of this amazing adventure.</center>
+                        I feel that technology is going to be around for many years. I also enjoy</center>
+                        <center>going out with my friends and be at home just watching movies.</center>
+                        <center>Normally i will do some coding, homework and then go back to sleep. I have a cat and two dogs.</center></p>
+                    </ul>
+                </div>
+            </section>
+            <section id="mywork">
+                <div class="section-inner">
+                    <h3>My work</h3>
+                    <p><center>This is a little about me, and my experiences.</center>
+                         <center>I work in a beauty salon for almost 9 years.</center>
+                        <center>I have experience in customer service with all types of ages.</center>
+                         <center>I started this journey in 2019 at Kean university.</center>
+                        <center>I have experience with Java/c++/MyAQL and a little bit more with HTML now.</center>
+                        <center>Creating this website has been very hard but a nice experience.</center>
+                        <center>I hope I can learn more about creating more.</center>
+                        <a href="https://drive.google.com/file/d/1yblTUQLh9BhpgxxGTEwXwnlq_0PoaGFV/view?usp=sharing">My Resume</a>
+                    </p>
+                    <h3>Achievements</h3>
+                    <ul>
+                        <li>Bachelor of Computer Science, 2023</li>
+                        <li>Creating a game with C++</li>
+                        <li>Coded a website </li>
+                    </ul>
+                </div>
+            </section>
+            <div class=”Header”>
+            <section id="store">
+                <div class="section-inner">
+                    <h4>My Store</h4>
+                    <div class="card">
+                        <img src="https://m.media-amazon.com/images/I/61hhspVWHoL.jpg" alt="Blue Sunglasses" style="width: 50%" class="store-img">
+                        <h1>Brown Sunglasses</h1>
+                        <p class="price">$19.00</p>
+                        <p><button>Add to Cart</button></p>
+                        <div class="card">
+                            <img src="https://cdn.shopify.com/s/files/1/0109/5012/products/BARTON_CRYSTALGREY_GLACIER_MIRROR_FRONT.jpg?v=1672849220" alt="Mirror Sunglasses" style="width:50%" class="store-img">
+                            <h1>Blue Sunglasses</h1>
+                            <p class="price">$19.99</p>
+                            <p><button>Add to Cart</button></p>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="section-inner">
+                          <h5>Contact Us</h5>
+                          <div class="container">
+                        <div style="text-align:center">
+                        <p><a href="mailto:castiric@kean.edu">Send me an email</a></p>
+                        <a href="https://www.instagram.com/cast.riccii">Instagram</a>
+                        <p>Any question?, leave us a message or visit our website</p>
+                        </div>
+                </div>
+            </section>
+              </div>
+        </main>
+        <footer>
+            © Website made by Ricci Castillo, March 1, 2023
+        </footer>
+    </body>
+</html>
